@@ -5,26 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Unkempt:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap rel="stylesheet"> 
     <title>Em busca da princesa</title>
 </head>
 <body>
     <main>
-        <div class="passo" id="passo-0">
-            <p>Um dia, o rei comunicou ao reino que a sua única filha desapareceu na noite passada, as autoridades disseram que não iam conseguir sem a colaboração povo. Então o rei ofereceu um prêmio em dinheiro para a pessoa que encontrar a su filha. Então eu decidi ir á busca pela princesa. Teho duas opcões de caminho!</p>
-         <button class="btn-proximo" data proximo-="1">Floresta das arvóress vermelhas</button>
-         <button class="btn-proximo" data proximo-="1">Floresta das arvóres azuis</button>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.jpg" alt="">
+            <p>Um dia, o rei comunicou ao reino que a sua única filha desapareceu na noite passada, as autoridades disseram que não iam conseguir sem a colaboração povo. Então o rei ofereceu um prêmio em dinheiro para a pessoa que encontrar a sua filha. Então eu decidi ir á busca pela princesa. Tenho duas opcões de caminho!!</p>
+            <button class="btn-proximo" data-proximo="1">Floresta das arvores vermelhas</button>
+            <button class="btn-proximo" data-proximo="2">Floresta das arvores azuis</button>
         </div>
         <div class="passo" id="passo-1">
-            <p> Você começou pelo caminho da floresta das arvóres azuis! você decide procurar alguma pista, mas, não sabe por onde começar</p>
-         <button class="btn-proximo" data proximo-="2">Procurar nas arvóres</button>
-         <button class="btn-proximo" data proximo-="3">Procurar no chão</button>
+            <p> Você começou pelo caminho da floresta das arvóres azuis! Você decide procurar alguma pista, mas, não sabe por onde começar.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar no chão</button>
+            <button class="btn-proximo" data-proximo="4">Voltar e ir pela a floresta de arvores vermelhas </button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p> Você começou pelo caminho da floresta das arvóres vermelhas! Você decide procurar alguma pista, mas, não sabe por onde começar.</p>
+            <button class="btn-proximo" data-proximo="5">Voltar e ir pela a floresta de arvores azuis  </button>
+            <button class="btn-proximo" data-proximo="6">Procurar nos chão </button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p> Você viu que há pegadas no chão. Deseja Segui-las?</p>
+            <button class="btn-proximo" data-proximo="7">Sim</button>
+            <button class="btn-proximo" data-proximo="8">Não </button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo0.jpg" alt="voltando para o reino">
+            <p>Você decide que não vai segiur as pegadas e volta para o reino se perguntando se teria conseguido encontrar a princesa.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Você descobre que as pegadsa a levam para um arbusto grande .</p>
+            <button class="btn-proximo" data-proximo="9">Ir ate o arbusto de flores</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Atras do arbusto vc encontra uma tiara de diamentes e uma trilha de doces.O que vocêvai fazer?</p>
+            <button class="btn-proximo" data-proximo="10"> Pegar a tiara e continuar o caminho</button>
+            <button class="btn-proximo" data-proximo="11">Seguir a trilha de doces</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p> Durante o caminho você escuta alguem chorando.</p>
+            <button class="btn-proximo" data-proximo="12">Ir ate lá  </button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>A trilha te leva ate uma menina chorando!Talvez seja a princesa</p>
+            <button class="btn-proximo" data-proximo="13">Ir ate a menina</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Ao chegar lá você noa que é a princesa. Leva-lá para casa.</p>
+            <button class="btn-proximo" data-proximo="14">Levar a princesa para so reino </button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Você~se aproxima mais e era a princesa chorando por estar perdida. Vamos Leva-lá para sua casa.</p>
+            <button class="btn-proximo" data-proximo="15">Voltar com a princesa para o reino</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario0.png" alt="o rei feliz com sua filha">
+            <p>O rei fica muito feliz em ver a sua filha de volta. Ele le oferece uma recompença</p>
+            <button class="btn-proximo" data-proximo="16">Aceitar</button>
+            <button class="btn-proximo" data-proximo="17">Não aceitar</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você aceita e ganha milhares de moedas de ouro!!.</p>
+
+            <div class="passo" id="passo-13">
+            <p>Você não aceita, pois fica feliz com a princesa estar de volta!!.</p>
         </div>
     </main>
-    </main>
-
-
-    
+    <script src="script.js"></script>
 </body>
 </html>
